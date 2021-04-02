@@ -107,7 +107,7 @@ class medical extends React.Component {
     };
   }
 
-  searchText(e){
+  searchMed(e){
       this.setState({
           filter:e.target.value
       })
@@ -118,7 +118,7 @@ class medical extends React.Component {
   render() {
 let { filter,data}=this.state;
 
-let DataSearch=data.filter(item=>{
+let MedSearch=data.filter(item=>{
     return Object.keys(item).some(key=>
         item[key].toLowerCase().includes(filter.toLowerCase())
     )
@@ -131,7 +131,7 @@ let DataSearch=data.filter(item=>{
           <hr />
           
           <div className="Search">
-          Search:<input type="text" value={filter} placeholder="Serach......" onChange={this.searchText.bind(this)} />
+          Search:<input type="text" value={filter} placeholder="Serach......" onChange={this.searchMed.bind(this)} />
           </div>
           <hr />
           <table border="1">
@@ -143,7 +143,7 @@ let DataSearch=data.filter(item=>{
               <th>Exp</th>
             </tr>
             {
-                (DataSearch.map(item => 
+                (MedSearch.map(item => 
               <tr>
                 <td>{item.MedName}</td>
                 <td>{item.Available}</td>
