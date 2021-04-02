@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(12, 12, 12);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 84px;
+  color: rgb(28, 173, 113);
+  background: white;
+}
+input {
+  padding: 8px;
+  margin: 2px;
+  color: rgb(104, 187, 36);
+  background-color: white;
+}
+tr,
+th {
+  font-size: 40px;
+  color: rgb(247, 237, 207);
+  background-color: rgb(48, 42, 44);
+  font-style: oblique;
+}
+td {
+  color: rgb(12, 11, 12);
+  font-style: normal;
+  background-color: rgb(208, 209, 219);
+}
+.Search {
+  background-color: #fff;
+  width: 100%;
+}
